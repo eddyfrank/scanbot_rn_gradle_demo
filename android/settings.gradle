@@ -1,0 +1,6 @@
+rootProject.name = 'scanbot_rn_gradle_demo'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':react-native-scanbot-sdk'
+project(':react-native-scanbot-sdk').projectDir = file("./scanbot")
